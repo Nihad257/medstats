@@ -1,0 +1,34 @@
+---
+title: "Introduction to medstats: Statistical Tools for Medical Research"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to medstats}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Overview
+
+The `medstats` package provides simple statistical tools for medical research.
+
+## Setup
+
+```{r setup}
+library(medstats)
+```
+
+## Two-Sample T-Test
+
+```{r ttest}
+data(mtcars)
+mtcars$group <- ifelse(mtcars$am == 0, 'Automatic', 'Manual')
+result <- calc_ttest(mtcars, mpg, group)
+print(result)
+```
+
+## Correlation Analysis
+
+```{r correlation}
+result <- corr_analysis(mtcars, mpg, wt)
+print(result)
+```

@@ -1,0 +1,17 @@
+Package: medstats
+Title: Basic Statistical Tools for Medical Research
+Version: 0.0.1
+Authors@R: person("Muhammed", "Nihad", email = "nihadkannur1000@gmail.com", role = c("aut", "cre"))
+Description: A simple package for medical researchers, providing functions for t-tests and correlation analysis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+    dplyr,
+    stats
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+NeedsCompilation: no
+Suggests:
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
