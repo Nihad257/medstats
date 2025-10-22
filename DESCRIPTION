@@ -5,13 +5,19 @@ Authors@R: person("Muhammed", "Nihad", email = "nihadkannur1000@gmail.com", role
 Description: A simple package for medical researchers, providing functions for t-tests and correlation analysis.
 License: MIT + file LICENSE
 Encoding: UTF-8
+Depends: R (>= 3.6.0)
 Imports:
     dplyr,
-    stats
+    stats,
+    tibble
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 NeedsCompilation: no
 Suggests:
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat (>= 3.0.0)
 VignetteBuilder: knitr
+URL: https://github.com/Nihad257/medstats
+BugReports: https://github.com/Nihad257/medstats/issues
+Config/testthat/edition: 3
