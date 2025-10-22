@@ -1,4 +1,5 @@
-^medstats\.Rproj$
+^.*\.Rproj$
 ^\.Rproj\.user$
-^doc$
-^Meta$
+^LICENSE\.md$
+^README\.md$
+^\.github$
